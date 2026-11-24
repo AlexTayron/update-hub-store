@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.9",
-    "version_label":  "0.5.9 BETA",
+    "version":  "0.5.10",
+    "version_label":  "0.5.10 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13758048,
-    "sha256":  "e431964e0eec7fdd3c10928bbbf3e9a664c605e2beeac26f7cf7c9354390bcea",
+    "size":  13758997,
+    "sha256":  "c3ccf75cf946bd9b5350f31c077efd1264c3cc0b6df0aa8f887f6e3a31b1ee21",
     "min_version":  "",
-    "notes":  "Teclado mais rápido na Loja de Jogos para configurar o link da fonte (SELECT).\n* Ao apertar SELECT na Loja de Jogos sem fonte personalizada, o campo já abre preenchido com \"https://github.com/\".\n* Novo atalho Y (Limpar) no teclado na tela para apagar todo o texto em 1 clique.\n* Tecla \"/\" adicionada direto na tela principal do teclado e prefixo \"https://\" preenchido automaticamente se omitido."
+    "notes":  "Detecção automática da pasta real de cada console na raiz do cartão EASYROMS (/roms/\u003csistema\u003e).\n* Jogos de consoles (NES, SNES, GBA, PSX, PSP, Atari 2600, Mega Drive, Arcade, etc.) são instalados direto na pasta correspondente na raiz do cartão (/roms/nes, /roms/snes, /roms/psx, /roms/psp, /roms/atari2600...), nunca em /roms/ports.\n* Reconhecimento ampliado de todas as pastas nativas do R36S (arcade, atari2600/5200/7800/800/jaguar/lynx/st, 3do, atomiswave, naomi, neogeocd, pcenginecd, famicom, genesis, megadrive, etc.) com fallback automático para a pasta existente no cartão."
 }
