@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.8",
-    "version_label":  "0.5.8 BETA",
+    "version":  "0.5.9",
+    "version_label":  "0.5.9 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13757950,
-    "sha256":  "8acf00cb4b8b17c1ff5ed1a3411c24ee9ee4229fac703fea11195cca2b939ad3",
+    "size":  13758048,
+    "sha256":  "e431964e0eec7fdd3c10928bbbf3e9a664c605e2beeac26f7cf7c9354390bcea",
     "min_version":  "",
-    "notes":  "Correções no leitor de repositórios GitHub e roms_url.txt da Loja de Jogos.\n* (corrigido) Consulta direta da árvore do GitHub via HEAD (funciona tanto em branch main quanto master com 1 única chamada à API).\n* (corrigido) Reconhecimento flexível de nomes de pastas de consoles (ex.: \"Super Nintendo (SNES)\", \"Nintendo - Game Boy Advance\", \"PlayStation (PS1)\", ou inferência automática pela extensão do arquivo).\n* (corrigido) Remoção automática de BOM UTF-8 ao ler roms_url.txt salvo no Bloco de Notas do Windows.\n* (corrigido) Parser otimizado sem decodificação duplicada para repositórios grandes e mensagens de erro mais claras na tela."
+    "notes":  "Teclado mais rápido na Loja de Jogos para configurar o link da fonte (SELECT).\n* Ao apertar SELECT na Loja de Jogos sem fonte personalizada, o campo já abre preenchido com \"https://github.com/\".\n* Novo atalho Y (Limpar) no teclado na tela para apagar todo o texto em 1 clique.\n* Tecla \"/\" adicionada direto na tela principal do teclado e prefixo \"https://\" preenchido automaticamente se omitido."
 }
