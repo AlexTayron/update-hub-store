@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.10",
-    "version_label":  "0.5.10 BETA",
+    "version":  "0.5.11",
+    "version_label":  "0.5.11 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13758997,
-    "sha256":  "c3ccf75cf946bd9b5350f31c077efd1264c3cc0b6df0aa8f887f6e3a31b1ee21",
+    "size":  13758817,
+    "sha256":  "16b7dbd952286f756112b2b305d4bbbe614cf40c305a9d14e929c39039e0efef",
     "min_version":  "",
-    "notes":  "Detecção automática da pasta real de cada console na raiz do cartão EASYROMS (/roms/\u003csistema\u003e).\n* Jogos de consoles (NES, SNES, GBA, PSX, PSP, Atari 2600, Mega Drive, Arcade, etc.) são instalados direto na pasta correspondente na raiz do cartão (/roms/nes, /roms/snes, /roms/psx, /roms/psp, /roms/atari2600...), nunca em /roms/ports.\n* Reconhecimento ampliado de todas as pastas nativas do R36S (arcade, atari2600/5200/7800/800/jaguar/lynx/st, 3do, atomiswave, naomi, neogeocd, pcenginecd, famicom, genesis, megadrive, etc.) com fallback automático para a pasta existente no cartão."
+    "notes":  "Loja de Jogos apontada nativamente para o novo repositório roms-games (raw.githubusercontent.com).\n* Link padrão da Loja de Jogos atualizado para https://raw.githubusercontent.com/AlexTayron/roms-games/main/roms.json (sem limite da API do GitHub e atualização automática por pastas)."
 }
