@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.6",
-    "version_label":  "0.5.6 BETA",
+    "version":  "0.5.7",
+    "version_label":  "0.5.7 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13752812,
-    "sha256":  "69fa915776c26c4d725d9b0bd4fa99cd88ce88c8cad01c29dfb254cdec1acfc4",
+    "size":  13756573,
+    "sha256":  "95860279cf8e1bf3a71e918dcea731b80717f77a959c12fbc5088c59aac12ac9",
     "min_version":  "",
-    "notes":  "Nova aba Loja de Jogos na tela inicial com pesquisa e filtro por console.\n* Nova aba \"Loja de Jogos\" logo acima de \"Central de Conteúdo\" na tela inicial (em todos os temas).\n* Pesquisa integrada de jogos retrô (botão X na Loja de Jogos) por nome do jogo ou console/categoria.\n* Suporte em roms_url.txt tanto para catálogo JSON quanto para qualquer repositório GitHub organizado por pastas de console (ex.: snes/, gba/, nes/, megadrive/, psx/).\n* Lista expandida de consoles e apelidos de pastas para instalação direta em /roms/\u003csistema\u003e/."
+    "notes":  "Loja de Jogos organizada em pastas por console (GBA/, SNES/, NES/, PSX/...) e editor de fonte no console.\n* Nova tela dedicada da Loja de Jogos exibindo pastas por console (ex.: GBA/, SNES/, MEGADRIVE/, PSX/) com quantidade de jogos em cada pasta.\n* Botão SELECT na Loja de Jogos para configurar/editar o link da fonte (roms_url.txt: repositório GitHub ou JSON) direto pelo console.\n* Botão X para pesquisar jogos retrô em todas as pastas e botão Y para atualizar com feedback ao vivo de carregamento e erros.\n* Leitor de repositórios GitHub aprimorado: reconhece nomes de pastas com espaços, subpastas e extensões de ROMs, com timeout aumentado para 60 s."
 }
