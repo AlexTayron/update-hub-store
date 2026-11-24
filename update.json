@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.7",
-    "version_label":  "0.5.7 BETA",
+    "version":  "0.5.8",
+    "version_label":  "0.5.8 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13756573,
-    "sha256":  "95860279cf8e1bf3a71e918dcea731b80717f77a959c12fbc5088c59aac12ac9",
+    "size":  13757950,
+    "sha256":  "8acf00cb4b8b17c1ff5ed1a3411c24ee9ee4229fac703fea11195cca2b939ad3",
     "min_version":  "",
-    "notes":  "Loja de Jogos organizada em pastas por console (GBA/, SNES/, NES/, PSX/...) e editor de fonte no console.\n* Nova tela dedicada da Loja de Jogos exibindo pastas por console (ex.: GBA/, SNES/, MEGADRIVE/, PSX/) com quantidade de jogos em cada pasta.\n* Botão SELECT na Loja de Jogos para configurar/editar o link da fonte (roms_url.txt: repositório GitHub ou JSON) direto pelo console.\n* Botão X para pesquisar jogos retrô em todas as pastas e botão Y para atualizar com feedback ao vivo de carregamento e erros.\n* Leitor de repositórios GitHub aprimorado: reconhece nomes de pastas com espaços, subpastas e extensões de ROMs, com timeout aumentado para 60 s."
+    "notes":  "Correções no leitor de repositórios GitHub e roms_url.txt da Loja de Jogos.\n* (corrigido) Consulta direta da árvore do GitHub via HEAD (funciona tanto em branch main quanto master com 1 única chamada à API).\n* (corrigido) Reconhecimento flexível de nomes de pastas de consoles (ex.: \"Super Nintendo (SNES)\", \"Nintendo - Game Boy Advance\", \"PlayStation (PS1)\", ou inferência automática pela extensão do arquivo).\n* (corrigido) Remoção automática de BOM UTF-8 ao ler roms_url.txt salvo no Bloco de Notas do Windows.\n* (corrigido) Parser otimizado sem decodificação duplicada para repositórios grandes e mensagens de erro mais claras na tela."
 }
