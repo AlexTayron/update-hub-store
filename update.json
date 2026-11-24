@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.11",
-    "version_label":  "0.5.11 BETA",
+    "version":  "0.5.12",
+    "version_label":  "0.5.12 BETA",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13758817,
-    "sha256":  "16b7dbd952286f756112b2b305d4bbbe614cf40c305a9d14e929c39039e0efef",
+    "size":  13760770,
+    "sha256":  "a4b251d702e4a2b56a1a4bde0d794962eefad4077cfa483dd5c6f9546ef1690a",
     "min_version":  "",
-    "notes":  "Loja de Jogos apontada nativamente para o novo repositório roms-games (raw.githubusercontent.com).\n* Link padrão da Loja de Jogos atualizado para https://raw.githubusercontent.com/AlexTayron/roms-games/main/roms.json (sem limite da API do GitHub e atualização automática por pastas)."
+    "notes":  "Capas automáticas para jogos retrô na Loja de Jogos, na Biblioteca e no EmulationStation.\n* Busca automática de capas pelo banco público Libretro Thumbnails (thumbnails.libretro.com) quando o jogo retrô não tiver imagem própria no repositório, com tentativa automática de variações de região (USA, World, Europe).\n* Ao instalar um jogo retrô em /roms/\u003csistema\u003e/, a capa (PNG/JPG) agora é salva em /roms/\u003csistema\u003e/images/ e registrada automaticamente no /roms/\u003csistema\u003e/gamelist.xml (com backup seguro e sem sobrescrever capas existentes).\n* A Biblioteca de jogos recarrega automaticamente após instalar jogos retrô para exibir o jogo novo já com a capa."
 }
