@@ -1,10 +1,10 @@
 {
-    "version":  "0.5.12",
-    "version_label":  "0.5.12 BETA",
+    "version":  "1.0.0",
+    "version_label":  "1.0.0",
     "date":  "2026-11-24",
     "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
-    "size":  13760770,
-    "sha256":  "a4b251d702e4a2b56a1a4bde0d794962eefad4077cfa483dd5c6f9546ef1690a",
+    "size":  13760930,
+    "sha256":  "08e874eb011de26d6254115c2f15510f79982d9d0a834cc608bd9dc47930cbca",
     "min_version":  "",
-    "notes":  "Capas automáticas para jogos retrô na Loja de Jogos, na Biblioteca e no EmulationStation.\n* Busca automática de capas pelo banco público Libretro Thumbnails (thumbnails.libretro.com) quando o jogo retrô não tiver imagem própria no repositório, com tentativa automática de variações de região (USA, World, Europe).\n* Ao instalar um jogo retrô em /roms/\u003csistema\u003e/, a capa (PNG/JPG) agora é salva em /roms/\u003csistema\u003e/images/ e registrada automaticamente no /roms/\u003csistema\u003e/gamelist.xml (com backup seguro e sem sobrescrever capas existentes).\n* A Biblioteca de jogos recarrega automaticamente após instalar jogos retrô para exibir o jogo novo já com a capa."
+    "notes":  "HUB STORE 1.0.0 — Versão estável otimizada para catálogos grandes de jogos retrô.\n* Pesquisa otimizada com cache interno para digitação instantânea mesmo com milhares de jogos na Loja de Jogos.\n* Contadores da tela inicial e dos temas separados entre Ports e Jogos Retrô.\n* Varredura de Meus Ports otimizada para ignorar ROMs de consoles (abertura instantânea).\n* Loja de Jogos integrada ao catálogo online roms-games com capas automáticas (próprias ou Libretro Thumbnails) e gravação automática no gamelist.xml de cada console em /roms/\u003csistema\u003e/."
 }
