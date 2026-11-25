@@ -1,0 +1,69 @@
+name: Publicar Release OTA do HUB STORE
+
+on:
+  push:
+    branches: [ ota-drop ]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar branch ota-drop
+        uses: actions/checkout@v4
+
+      - name: Validar ZIP OTA e ler manifesto
+        id: meta
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, struct, zlib
+
+          path = "HUB-STORE-update.zip"
+          data = open(path, "rb").read(262144)
+          assert data[:4] == b"PK\x03\x04", "ZIP invalido"
+          flags, method = struct.unpack_from("<HH", data, 6)
+          csize = struct.unpack_from("<I", data, 18)[0]
+          nlen, elen = struct.unpack_from("<HH", data, 26)
+          name = data[30:30+nlen].decode("utf-8")
+          assert flags % 16 < 8, f"Bit 3 ativo: {flags}"
+          assert name == "update_manifest.json", f"1o item invalido: {name}"
+          start = 30 + nlen + elen
+          raw = data[start:start+csize]
+          txt = raw if method == 0 else zlib.decompress(raw, -zlib.MAX_WBITS)
+          m = json.loads(txt.decode("utf-8"))
+
+          ver = str(m["version"])
+          lab = str(m.get("version_label") or ver)
+          print(f"tag=v{ver}")
+          print(f"label={lab}")
+
+          body = [str(m.get("description") or "").strip(), ""]
+          if m.get("changes"):
+              body += ["### Novidades"] + ["- " + str(x) for x in m["changes"]] + [""]
+          if m.get("fixes"):
+              body += ["### CorreÃ§Ãµes"] + ["- " + str(x) for x in m["fixes"]] + [""]
+          body += [
+              f"Pacote OTA completo (**{lab}**): atualiza qualquer versÃ£o instalada do HUB STORE via **ConfiguraÃ§Ãµes â†’ AtualizaÃ§Ãµes do hub â†’ AtualizaÃ§Ã£o via rede**.",
+              "",
+              "- `HUB-STORE-update.zip`: pacote OTA baixado automaticamente pelo console.",
+              "- `HUB-STORE.zip`: pacote completo para instalaÃ§Ã£o manual em `/roms/ports/`.",
+          ]
+          open("release_body.md", "w", encoding="utf-8", newline="\n").write("\n".join(body).strip() + "\n")
+          PY
+          cp HUB-STORE-update.zip HUB-STORE.zip
+
+      - name: Criar ou atualizar Release oficial
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.meta.outputs.tag }}"
+          TITLE="HUB STORE ${{ steps.meta.outputs.label }}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "$TITLE" --notes-file release_body.md --latest
+            gh release upload "$TAG" HUB-STORE-update.zip HUB-STORE.zip --clobber
+          else
+            gh release create "$TAG" HUB-STORE-update.zip HUB-STORE.zip \
+              --target main --title "$TITLE" --notes-file release_body.md --latest
+          fi

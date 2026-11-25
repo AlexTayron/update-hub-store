@@ -1,0 +1,10 @@
+{
+    "version":  "1.0.0",
+    "version_label":  "1.0.0",
+    "date":  "2026-11-24",
+    "url":  "https://github.com/AlexTayron/update-hub-store/releases/latest/download/HUB-STORE-update.zip",
+    "size":  13760930,
+    "sha256":  "08e874eb011de26d6254115c2f15510f79982d9d0a834cc608bd9dc47930cbca",
+    "min_version":  "",
+    "notes":  "HUB STORE 1.0.0 — Versão estável otimizada para catálogos grandes de jogos retrô.\n* Pesquisa otimizada com cache interno para digitação instantânea mesmo com milhares de jogos na Loja de Jogos.\n* Contadores da tela inicial e dos temas separados entre Ports e Jogos Retrô.\n* Varredura de Meus Ports otimizada para ignorar ROMs de consoles (abertura instantânea).\n* Loja de Jogos integrada ao catálogo online roms-games com capas automáticas (próprias ou Libretro Thumbnails) e gravação automática no gamelist.xml de cada console em /roms/\u003csistema\u003e/."
+}
